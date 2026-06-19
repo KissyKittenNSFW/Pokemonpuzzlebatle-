@@ -1,87 +1,96 @@
-# 🏆 Pokémon Unite Clone
+🏆 Pokémon Unite Clone
 
-Game MOBA 5v5 bertema Pokémon, dibuat dengan **HTML, CSS, dan JavaScript murni** (vanilla, tanpa framework atau library eksternal selain Google Fonts). Bisa langsung dimainkan di browser tanpa proses build apa pun.
+A 5v5 Pokémon-themed MOBA game built entirely with pure HTML, CSS, and JavaScript (vanilla, with no external frameworks or libraries except Google Fonts). Play instantly in your browser with no build process required.
 
-![status](https://img.shields.io/badge/status-playable-brightgreen)
-![tech](https://img.shields.io/badge/tech-HTML%2FCSS%2FJS-orange)
-![license](https://img.shields.io/badge/license-MIT-blue)
+"status" (https://img.shields.io/badge/status-playable-brightgreen)
+"tech" (https://img.shields.io/badge/tech-HTML%2FCSS%2FJS-orange)
+"license" (https://img.shields.io/badge/license-MIT-blue)
 
-## 🎮 Demo
+🎮 Demo
 
-Buka langsung file `index.html` di browser, atau mainkan via GitHub Pages (lihat bagian [Deploy](#-deploy-ke-github-pages) di bawah).
+Open "index.html" directly in your browser, or play via GitHub Pages (see the "Deploy" (#-deploy-to-github-pages) section below).
 
-## ✨ Fitur
+✨ Features
 
-- Mode pertandingan **5v5** melawan bot dengan AI sederhana
-- Pemilihan Pokémon (hero) dengan role berbeda: attacker, defender, dll
-- Sistem **level up**, **skill/ability**, dan **Unite Move** (ultimate)
-- **Aegis energy**, wild Pokémon, dan goal zone seperti game aslinya
-- Efek visual: damage number, kill VFX, screen shake, combo counter, dan animasi serangan
-- Minimap real-time, kill feed, dan HUD lengkap
-- Kontrol joystick analog untuk mobile + dukungan keyboard untuk desktop
-- Semua dalam **vanilla JS**, tanpa dependensi build tools
+- 5v5 MOBA matches against AI-controlled bots
+- Multiple playable Pokémon with unique roles such as Attacker, Defender, and more
+- Level-up system, special abilities, and powerful Unite Moves
+- Aeos Energy, wild Pokémon, and goal zones inspired by the original game
+- Visual effects including damage numbers, kill effects, screen shake, combo counters, and attack animations
+- Real-time minimap, kill feed, and complete HUD interface
+- Mobile-friendly analog joystick controls plus keyboard support for desktop
+- Built entirely with Vanilla JavaScript, with no build tools or external game engines
 
-## 📁 Struktur Proyek
+📁 Project Structure
 
-```
 pokemon-unite-clone/
-├── index.html      # Markup halaman & struktur UI (menu, layar game, HUD)
-├── style.css       # Seluruh styling, animasi, dan tema visual
-├── game.js         # Seluruh logika game: data hero, AI bot, fisika, render canvas
-├── README.md        # Dokumentasi ini
-├── LICENSE          # Lisensi MIT
-└── .gitignore        # File/folder yang diabaikan git
-```
+├── index.html      # Page structure, menus, game screens, and HUD
+├── style.css       # Styling, animations, and visual themes
+├── game.js         # Core game logic, hero data, AI, physics, and rendering
+├── README.md       # Project documentation
+├── LICENSE         # MIT License
+└── .gitignore      # Ignored files and folders
 
-## 🚀 Cara Menjalankan
+🚀 Getting Started
 
-### Opsi 1 — Buka langsung
-Cukup double-click `index.html`, atau buka lewat browser:
-```
-file:///path/ke/folder/pokemon-unite-clone/index.html
-```
+Option 1 — Open Directly
 
-### Opsi 2 — Local server (disarankan, agar font & asset lebih stabil)
-```bash
+Simply double-click "index.html" or open it in your browser:
+
+file:///path/to/pokemon-unite-clone/index.html
+
+Option 2 — Run a Local Server (Recommended)
+
 # Python 3
 python3 -m http.server 8000
 
-# atau Node.js
+# Or Node.js
 npx serve .
-```
-Lalu buka `http://localhost:8000` di browser.
 
-## 🕹️ Cara Bermain
+Then open:
 
-1. Klik **PLAY** di menu utama
-2. Pilih Pokémon yang ingin dimainkan
-3. Gunakan joystick (mobile) atau tombol **WASD/arrow keys** (desktop) untuk bergerak
-4. Tekan tombol skill 1, 2, 3 untuk menyerang/skill, dan tombol **Unite** saat energi penuh
-5. Kumpulkan skor dari wild Pokémon lalu masukkan ke goal zone tim kamu
-6. Tim dengan skor tertinggi saat waktu habis menang!
+http://localhost:8000
 
-## 🌐 Deploy ke GitHub Pages
+🕹️ How to Play
 
-1. Push repo ini ke GitHub
-2. Masuk ke **Settings → Pages**
-3. Pilih branch `main` dan folder root (`/`)
-4. Tunggu beberapa menit, game akan live di `https://<username>.github.io/<repo-name>/`
+1. Click PLAY on the main menu
+2. Select your Pokémon
+3. Move using the on-screen joystick (mobile) or WASD / Arrow Keys (desktop)
+4. Use Skill 1, Skill 2, Skill 3, and your Unite Move when fully charged
+5. Defeat wild Pokémon to collect Aeos Energy
+6. Score points in your team's goal zones
+7. The team with the highest score when time runs out wins the match
 
-## 🛠️ Tech Stack
+🌐 Deploy to GitHub Pages
 
-- HTML5 (Canvas API untuk rendering game)
-- CSS3 (animasi, gradient, responsive layout)
-- JavaScript ES6+ (vanilla, tanpa framework)
-- Font: [Press Start 2P](https://fonts.google.com/specimen/Press+Start+2P) via Google Fonts
+1. Push this repository to GitHub
+2. Navigate to Settings → Pages
+3. Select the "main" branch and the root ("/") folder
+4. Wait a few minutes for deployment to complete
 
-## 📝 Catatan
+Your game will be available at:
 
-Ini adalah proyek **fan-made / non-komersial** yang dibuat untuk tujuan belajar dan hiburan. Pokémon dan Pokémon UNITE adalah merek dagang milik **Nintendo, Game Freak, dan The Pokémon Company**. Proyek ini tidak berafiliasi atau didukung oleh pihak-pihak tersebut.
+https://<username>.github.io/<repository-name>/
 
-## 📄 Lisensi
+🛠️ Tech Stack
 
-Kode sumber proyek ini dirilis di bawah lisensi [MIT](LICENSE). Aset/nama Pokémon tetap menjadi hak cipta pemiliknya masing-masing.
+- HTML5 (Canvas API for rendering)
+- CSS3 (animations, gradients, responsive layouts)
+- JavaScript ES6+ (Vanilla JavaScript)
+- Google Fonts: Press Start 2P
+
+📝 Disclaimer
+
+This is a fan-made, non-commercial project created for educational and entertainment purposes only. Pokémon and Pokémon UNITE are trademarks and copyrighted properties of Nintendo, Game Freak, and The Pokémon Company.
+
+This project is not affiliated with, endorsed by, or sponsored by Nintendo, Game Freak, The Pokémon Company, or Pokémon UNITE.
+
+📄 License
+
+The source code is released under the MIT License.
+
+All Pokémon-related names, characters, trademarks, and assets remain the property of their respective owners.
 
 ---
 
-Dibuat dengan ❤️ menggunakan Claude.
+Made with ❤️ using Claude.
