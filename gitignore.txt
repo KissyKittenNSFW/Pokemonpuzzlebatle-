@@ -1,0 +1,18 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE
+.vscode/
+.idea/
+*.swp
+
+# Node (jika nanti pakai tooling/build)
+node_modules/
+npm-debug.log*
+dist/
+build/
+
+# Env
+.env
+.env.local
